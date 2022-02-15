@@ -1,0 +1,185 @@
+:root {
+  --body-background: #fff;
+  --black: #100b0d;
+  --dark-grey: #393438;
+  --medium-grey: #645e65;
+  --blue: #3d74ae;
+  --light-grey: #9ba0a8;
+  --light-blue: #d7dfe7;
+
+  --body-color: var(--black);
+  --link-color: var(--blue);
+  --page-header-color: #fff;
+  --btn-color: #fff;
+  --input-color: var(--dark-grey);
+
+  --page-header-background: var(--black);
+  --btn-background: var(--blue);
+  --input-background: var(--light-blue);
+
+  --character-detail-border: var(--dark-grey);
+  --btn-border: var(--light-blue);
+
+  --box-shadow: var(--blue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: var(--black);
+    --body-color: var(--light-blue);
+    --heading-color: var(--blue);
+    --character-detail-border: var(--light-blue);
+  }
+}
+
+body {
+  background: var(--body-background);
+  color: var(--body-color);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 80%;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+.reverse {
+  flex-flow: row-reverse;
+}
+
+.accessible-text {
+  overflow: hidden;
+  position: absolute;
+  top: -9999rem;
+  height: 1px;
+  width: 1px;
+}
+
+.page-header {
+  background: var(--page-header-background);
+  box-shadow: 0 2px 6px -2px var(--box-shadow);
+  color: var(--page-header-color);
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 22px;
+}
+
+h1 {
+  background: url('../assets/luke-pilot.svg') 0 0 no-repeat;
+  background-size: 54px 68px;
+  font-size: 34px;
+  line-height: 2;
+  margin: 0;
+  padding-left: 68px;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 {
+    background-image: url('../assets/stormtrooper.svg');
+  }
+}
+
+h2 {
+  color: var(--heading-color);
+  font-size: 34px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.character-detail {
+  border: solid 1px var(--character-detail-border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-weight: 700;
+}
+
+ul ul {
+  font-style: italic;
+}
+
+.pagination {
+  margin-bottom: 20px;
+}
+
+.loader {
+  display: block;
+  margin: 140px auto 0;
+  width: 106px;
+  height: 106px;
+}
+
+button {
+  background: var(--btn-background);
+  border: solid 1px var(--btn-border);
+  border-radius: 4px;
+  color: var(--btn-color);
+  font-weight: 700;
+  padding: 6px 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.33;
+}
+
+button:disabled:hover {
+  cursor: not-allowed;
+}
+
+input {
+  background-color: var(--input-background);
+  border: none;
+  border-radius: 12px;
+  color: var(--input-color);
+  font-style: italic;
+  padding: 10px;
+  margin-right: 8px;
+}

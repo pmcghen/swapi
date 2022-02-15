@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars Character Directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="page-header flex between">
+    <h1 class="main-title">Star Wars Character Directory</h1>
+    <div class="flex">
+      <label for="search" class="accessible-text">Search by character name</label>
+      <input type="text" name="search" id="search" placeholder="Search">
+      <button id="search-btn">
+        Search
+      </button>
+    </div>
+  </header>
+  <main id="app" class="wrapper">
+    <div id="character-list"></div>
+    <nav class="pagination flex between"></nav>
+  </main>
+  <script src="js/swapi.js"></script>
+</body>
+</html>
