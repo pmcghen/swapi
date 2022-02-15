@@ -134,12 +134,21 @@ h2 {
   margin-bottom: 18px;
 }
 
+.character-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 .character-detail {
   border: solid 1px var(--character-detail-border);
   border-radius: 8px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   padding: 14px 18px;
   text-transform: capitalize;
+  width: clamp(320px, calc(50% - 20px), 600px);
 }
 
 ul {
