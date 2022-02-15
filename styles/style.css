@@ -97,6 +97,13 @@ body {
   padding: 22px;
 }
 
+@media (max-width: 900px) {
+  .page-header {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 h1 {
   background: url('../assets/luke-pilot.svg') 0 0 no-repeat;
   background-size: 54px 68px;
@@ -104,6 +111,13 @@ h1 {
   line-height: 2;
   margin: 0;
   padding-left: 68px;
+}
+
+@media (max-width: 566px) {
+  h1 {
+    line-height: 1;
+    margin-bottom: 16px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
